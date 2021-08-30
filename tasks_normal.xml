@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/straint2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksOrNormal"
+    android:background="@drawable/lightblueclouds"
+>
+
+    <Button
+        android:id="@+id/input"
+        android:layout_width="402dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="50dp"
+        android:background="#276FA8"
+        android:backgroundTint="#33FFFFFF"
+        android:gravity="center|left"
+        android:text="@string/input"
+        android:textAlignment="center"
+        android:textColor="#353533"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/alarms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="411dp"
+        android:layout_marginBottom="362dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="365dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="395dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="20dp"
+        android:background="#276FA8"
+        android:backgroundTint="#33FFFFFF"
+        android:gravity="center|left"
+        android:text="@string/proceed"
+        android:textAlignment="center"
+        android:textColor="#353533"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarms"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <RadioButton
+        android:id="@+id/alarms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginEnd="89dp"
+        android:buttonTint="#B85252"
+        android:text="@string/alarmsButton"
+        android:textAlignment="center"
+        android:textColor="#ED2222"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

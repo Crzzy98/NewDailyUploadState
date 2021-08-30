@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkblueclouds"
+
+    android:orientation="vertical"
+    tools:context=".hours">
+
+    <TextView
+        android:id="@+id/howManyTasksHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:text="@string/hours"
+        android:textAlignment="center"
+        android:textColor="#080809"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/howManyTasksHeader"
+        android:layout_marginTop="-122dp"
+        android:hint="@string/hours1"
+         >
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="502dp"
+        android:hint="@string/hours1"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/hoursEnter"
+        android:background="#276FA8"
+        android:backgroundTint="#33FFFFFF"
+        android:layout_width="283dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="397dp"
+        android:text="@string/enter"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

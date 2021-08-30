@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HowToUse"
+    android:background="@drawable/lightblueclouds"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/howToUseHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <TextView
+        android:id="@+id/howToUse1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:text="@string/howToUse1"
+        android:textAlignment="textStart"
+        android:textColor="#060AF1"
+        android:backgroundTint="#33FFFFFF"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/howToUse2"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:paddingLeft="12dp"
+        android:gravity="center"
+        android:text="@string/howToUse2"
+        android:textAlignment="textStart"
+        android:textColor="#060AF1"
+        android:textSize="24sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:gravity="center"
+        android:text="@string/warning"
+        android:textColor="#060AF1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/howToUse3"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:gravity="center|top"
+        android:paddingLeft="12dp"
+        android:text="@string/howToUse3"
+        android:textAlignment="textStart"
+        android:textColor="#060AF1"
+        android:textSize="20sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
